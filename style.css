@@ -1,147 +1,157 @@
-/* ===== Reset general ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* ====== ESTILOS GENERALES ====== */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  scroll-behavior: smooth;
 }
 
-/* ===== Navbar ===== */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ====== NAVBAR ====== */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  padding: 1rem 3rem;
   z-index: 1000;
 }
 
 .navbar .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #6df542;
-  letter-spacing: 1px;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  color: #6df542;
-}
-
-/* ===== Hero section ===== */
-.hero {
-  height: 100vh;
-  background: url('https://images.unsplash.com/photo-1563260528-9e8a0b41c96a?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-}
-
-.hero .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  padding: 20px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.hero p {
   font-size: 1.2rem;
-  margin-bottom: 40px;
-  color: #dcdcdc;
+  font-weight: bold;
 }
 
-/* ===== Botones ===== */
-.btn {
-  padding: 12px 25px;
-  margin: 0 10px;
+.navbar nav a {
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #32CD32;
+}
+
+/* ====== HERO ====== */
+.hero {
+  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.3)),
+              url('https://images.unsplash.com/photo-1573495612937-3f8a2b00c4a1?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: 600;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-primary {
-  background: #6df542;
-  color: #000;
-}
-
-.btn-primary:hover {
-  background: #54cc32;
+  background-color: #32CD32;
+  color: white;
 }
 
 .btn-secondary {
-  background: #111;
-  border: 1px solid #6df542;
-  color: #6df542;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #28a428;
 }
 
 .btn-secondary:hover {
-  background: #6df542;
-  color: #000;
+  background-color: white;
+  color: #222;
 }
 
-/* ===== Footer ===== */
-footer {
-  background: #000;
+/* ====== SECCIONES ====== */
+.section {
+  padding: 6rem 10%;
+  background: white;
+  margin-top: 5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.section h2 {
   text-align: center;
-  padding: 20px 10px;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+.section p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* ====== TARJETAS DE PROYECTOS ====== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ====== CONTACTO ====== */
+.contacto {
+  background: linear-gradient(135deg, #32CD32, #006400);
+  color: white;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
   font-size: 0.9rem;
-  color: #aaa;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 10px 20px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .btn {
-    display: block;
-    margin: 10px auto;
-  }
-}
