@@ -1,41 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kevin Tarazona - Geociencias y Modelamiento 3D</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Tarazona | Geociencias y Energía</title>
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Librería AOS (animaciones al hacer scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Iconos (opcional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- ===== NAVBAR ===== -->
+
+  <!-- 🔹 NAVBAR -->
   <header class="navbar">
-    <div class="logo">KTGeo</div>
+    <div class="logo">🌎 Kevin Tarazona</div>
     <nav>
-      <ul>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#modelos">Modelos 3D</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <!-- ===== HERO ===== -->
+  <!-- 🔹 HERO PRINCIPAL -->
   <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Geociencias, Energía y Modelamiento 3D</h1>
-      <p>Explorando la Tierra con datos, física y simulación digital.</p>
-      <div class="buttons">
-        <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-        <a href="#contacto" class="btn btn-secondary">Contacto</a>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Modelamiento Geofísico y Energía Sostenible</h1>
+      <p>Geociencias aplicadas al desarrollo de Colombia 🌎</p>
+      <div class="hero-buttons">
+        <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+        <a href="#contacto" class="btn-secondary">Contáctame</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- 🔹 NOSOTROS -->
+  <section id="nosotros" class="section" data-aos="fade-right">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy geocientífico con enfoque en modelamiento directo e inverso 3D para métodos gravimétricos y geoléctricos, utilizando herramientas como SimPEG y Python.
+      Trabajo en la integración de datos geológicos, geofísicos y climáticos para el análisis del subsuelo y la transición energética.
+    </p>
+  </section>
+
+  <!-- 🔹 PROYECTOS -->
+  <section id="proyectos" class="section" data-aos="fade-left">
+    <h2>Proyectos Destacados</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in">
+        <h3>Modelamiento 3D Resistividad</h3>
+        <p>Simulación directa con SimPEG en mallado OcTree, incluyendo topografía y modelos sintéticos.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Minerales Estratégicos</h3>
+        <p>Análisis geológico y metalogenético de zonas con potencial para materiales críticos.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Geointeligencia Climática</h3>
+        <p>Integración de coberturas, datos satelitales y variables climáticas mediante aprendizaje automático.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 EVENTOS -->
+  <section id="eventos" class="section" data-aos="fade-up">
+    <h2>Eventos y Divulgación</h2>
+    <p>Participación en congresos, talleres y proyectos de difusión científica relacionados con la geofísica aplicada y la transición energética.</p>
+  </section>
+
+  <!-- 🔹 CONTACTO -->
+  <section id="contacto" class="section contacto" data-aos="flip-up">
+    <h2>Contáctame</h2>
+    <p>¿Quieres colaborar en un proyecto o conocer más?</p>
+    <a href="mailto:kevin.tarazona@ejemplo.com" class="btn-primary">Escríbeme</a>
+  </section>
+
+  <!-- 🔹 FOOTER -->
   <footer>
-    <p>© 2025 Kevin Tarazona | Geociencias Computacionales</p>
+    <p>© 2025 Kevin Tarazona | Geociencias y Energía</p>
   </footer>
+
+  <!-- Inicializar animaciones AOS -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
+
