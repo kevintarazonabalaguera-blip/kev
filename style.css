@@ -35,7 +35,6 @@ a {
 .logo {
   display: flex;
   align-items: center;
-  color: #111;
 }
 
 .logo img {
@@ -55,8 +54,13 @@ a {
   color: #666;
 }
 
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
 .navbar nav a {
-  margin: 0 1rem;
   font-weight: 600;
   color: #111;
   transition: color 0.3s;
@@ -66,9 +70,45 @@ a {
   color: #b30000;
 }
 
+/* ====== MENÚ HAMBURGUESA ====== */
+.menu-toggle {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #b30000;
+}
+
+.menu-toggle.active i {
+  color: #111;
+}
+
+@media (max-width: 950px) {
+  .menu-toggle {
+    display: block;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  nav.active {
+    display: flex;
+  }
+  nav a {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+}
+
 /* ====== HERO ====== */
 .hero {
-  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(90,0,0,0.3)),
+  background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(80,0,0,0.3)),
               url('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1600&q=80');
   background-size: cover;
   background-position: center;
@@ -181,28 +221,4 @@ footer {
   background: #f2f2f2;
   color: #333;
   font-size: 0.9rem;
-}
-
-/* ====== RESPONSIVE ====== */
-@media (max-width: 900px) {
-  .navbar {
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .navbar nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 0.5rem;
-  }
-  .navbar nav a {
-    margin: 0.5rem;
-  }
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
 }
