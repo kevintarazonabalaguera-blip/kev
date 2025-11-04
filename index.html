@@ -115,20 +115,15 @@
   <script>
     AOS.init({ duration: 1000, once: true });
 
-      <!-- Botón hamburguesa -->
-  <div class="menu-toggle" id="menu-toggle">
-    <i class="fa fa-bars"></i>
-  </div>
+    // Menú hamburguesa
+    const toggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
 
-  <nav id="navbar-links">
-    <a href="#inicio">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#repositorio">Repositorio</a>
-    <a href="#tutoriales">Tutoriales</a>
-    <a href="#publicaciones">Publicaciones</a>
-    <a href="#investigacion">Investigación</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
-
+    toggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      toggle.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
 
