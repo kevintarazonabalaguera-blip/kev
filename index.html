@@ -27,7 +27,8 @@
       </div>
     </div>
 
-    <nav>
+    <!-- Menú -->
+    <nav id="nav-menu">
       <a href="#inicio">Inicio</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#repositorio">Repositorio</a>
@@ -36,6 +37,11 @@
       <a href="#investigacion">Investigación</a>
       <a href="#contacto">Contacto</a>
     </nav>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
   </header>
 
   <!-- 🔹 HERO -->
@@ -50,7 +56,7 @@
     </div>
   </section>
 
-  <!-- 🔹 NOSOTROS -->
+  <!-- 🔹 SECCIONES -->
   <section id="nosotros" class="section" data-aos="fade-right">
     <h2>Sobre Nosotros</h2>
     <p>
@@ -60,7 +66,6 @@
     </p>
   </section>
 
-  <!-- 🔹 REPOSITORIO -->
   <section id="repositorio" class="section alt" data-aos="fade-left">
     <h2>Repositorio SIGAC</h2>
     <p>
@@ -69,52 +74,57 @@
     <a href="https://github.com/" class="btn-primary" target="_blank"><i class="fa-brands fa-github"></i> Ir al Repositorio</a>
   </section>
 
-  <!-- 🔹 TUTORIALES -->
   <section id="tutoriales" class="section" data-aos="fade-up">
     <h2>Tutoriales</h2>
     <p>Aprende con nuestras guías paso a paso sobre simulación geofísica, modelamiento geológico e inteligencia artificial aplicada.</p>
   </section>
 
-  <!-- 🔹 PUBLICACIONES -->
   <section id="publicaciones" class="section alt" data-aos="fade-right">
     <h2>Publicaciones</h2>
     <p>Consulta los artículos, informes y presentaciones desarrollados por el semillero en diferentes eventos académicos.</p>
   </section>
 
-  <!-- 🔹 INVESTIGACIÓN -->
   <section id="investigacion" class="section" data-aos="fade-left">
     <h2>Líneas de Investigación</h2>
     <div class="cards">
       <div class="card" data-aos="zoom-in">
         <h3>Modelamiento 3D</h3>
-        <p>Simulación directa y modelado inverso en medios complejos con topografía.</p>
+        <p>Simulación directa e inversa en medios complejos con topografía.</p>
       </div>
       <div class="card" data-aos="zoom-in" data-aos-delay="200">
         <h3>IA y Aprendizaje No Supervisado</h3>
-        <p>Aplicaciones de clustering, redes neuronales y análisis de patrones geofísicos.</p>
+        <p>Clustering, redes neuronales y análisis de patrones geofísicos.</p>
       </div>
       <div class="card" data-aos="zoom-in" data-aos-delay="400">
         <h3>Exploración Energética</h3>
-        <p>Modelamiento de recursos geotérmicos, hidrogeológicos y minerales críticos.</p>
+        <p>Modelamiento de recursos geotérmicos e hidrogeológicos.</p>
       </div>
     </div>
   </section>
 
-  <!-- 🔹 CONTACTO -->
   <section id="contacto" class="section contacto" data-aos="flip-up">
     <h2>Contáctanos</h2>
     <p>¿Quieres colaborar o conocer más sobre nuestros proyectos?</p>
     <a href="mailto:kevin.tarazona@ejemplo.com" class="btn-primary">Escríbenos</a>
   </section>
 
-  <!-- 🔹 FOOTER -->
   <footer>
     <p>© 2025 Semillero SIGAC | Geofísica Aplicada y Computacional</p>
   </footer>
 
   <script>
     AOS.init({ duration: 1000, once: true });
+
+    // Menú hamburguesa
+    const toggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      toggle.classList.toggle('active');
+    });
   </script>
 </body>
 </html>
+
 
