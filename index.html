@@ -108,65 +108,66 @@
     <a href="mailto:kevin.tarazona@ejemplo.com" class="btn-primary">Escríbenos</a>
   </section>
 
-  <!-- 🔹 MODALES DE INFORMACIÓN -->
-<div id="modal-nosotros" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Más sobre Nosotros</h2>
-    <p>
-      Aquí puedes ampliar la información del semillero, incluir fotos del equipo, líneas de trabajo, historia, etc.
-    </p>
-  </div>
-</div>
-
-<div id="modal-repositorio" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Repositorio SIGAC</h2>
-    <p>
-      Aquí puedes colocar información detallada del repositorio, estructura de carpetas, proyectos destacados, o enlaces directos a GitHub.
-    </p>
-  </div>
-</div>
-
-<div id="modal-tutoriales" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Tutoriales SIGAC</h2>
-    <p>
-      Aquí puedes incluir descripciones más completas o incrustar videos/tutoriales paso a paso.
-    </p>
-  </div>
-</div>
-
-<div id="modal-publicaciones" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Publicaciones</h2>
-    <p>
-      Detalla artículos, posters, informes técnicos y colaboraciones con otros grupos de investigación.
-    </p>
-  </div>
-</div>
-
-<div id="modal-investigacion" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Investigación</h2>
-    <p>
-      Aquí puedes colocar proyectos en curso, líneas temáticas o publicaciones relacionadas.
-    </p>
-  </div>
-</div>
-
   <footer>
     <p>© 2025 Semillero SIGAC | Geofísica Aplicada y Computacional</p>
   </footer>
 
-  <!-- ✅ Script del menú hamburguesa -->
+  <!-- 🔹 MODALES -->
+  <div id="modal-nosotros" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Más sobre Nosotros</h2>
+      <p>
+        Aquí puedes ampliar la información del semillero, incluir fotos del equipo, líneas de trabajo, historia, etc.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal-repositorio" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Repositorio SIGAC</h2>
+      <p>
+        Aquí puedes colocar información detallada del repositorio, estructura de carpetas, proyectos destacados, o enlaces directos a GitHub.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal-tutoriales" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Tutoriales SIGAC</h2>
+      <p>
+        Aquí puedes incluir descripciones más completas o incrustar videos/tutoriales paso a paso.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal-publicaciones" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Publicaciones</h2>
+      <p>
+        Detalla artículos, posters, informes técnicos y colaboraciones con otros grupos de investigación.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal-investigacion" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Investigación</h2>
+      <p>
+        Aquí puedes colocar proyectos en curso, líneas temáticas o publicaciones relacionadas.
+      </p>
+    </div>
+  </div>
+
+  <!-- 🔹 Scripts -->
   <script>
     AOS.init({ duration: 1000, once: true });
 
+    // Menú hamburguesa
     const toggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
 
@@ -176,7 +177,7 @@
     });
   </script>
 
-  <!-- ✅ Script de los modales (va AQUÍ, antes del cierre del body) -->
+  <!-- 🔹 Modales -->
   <script>
     const modales = {
       'nosotros': document.getElementById('modal-nosotros'),
