@@ -8,7 +8,7 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Librería AOS (animaciones al hacer scroll) -->
+  <!-- AOS Animaciones -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -17,32 +17,34 @@
 </head>
 
 <body>
-
   <!-- 🔹 NAVBAR -->
   <header class="navbar">
     <div class="logo">
       <img src="logo_sigac.png" alt="Logo SIGAC">
       <div class="logo-text">
         <span class="nombre">SIGAC</span><br>
-        <span class="semillero">SEMILLERO DE INVESTIGACIÓN EN GEOFÍSICA APLICADA Y COMPUTACIONAL</span>
+        <span class="semillero">Semillero de Investigación en Geofísica Aplicada y Computacional</span>
       </div>
     </div>
 
     <nav>
+      <a href="#inicio">Inicio</a>
       <a href="#nosotros">Nosotros</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#eventos">Eventos</a>
+      <a href="#repositorio">Repositorio</a>
+      <a href="#tutoriales">Tutoriales</a>
+      <a href="#publicaciones">Publicaciones</a>
+      <a href="#investigacion">Investigación</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <!-- 🔹 HERO -->
-  <section class="hero">
+  <section id="inicio" class="hero">
     <div class="hero-content" data-aos="fade-up">
-      <h1>Modelamiento Geofísico y Energía Sostenible</h1>
-      <p>Investigación en geofísica aplicada y computacional para el desarrollo de Colombia 🇨🇴</p>
+      <h1>Geofísica Aplicada y Energía Sostenible</h1>
+      <p>Modelamiento, simulación y análisis computacional al servicio del desarrollo geocientífico de Colombia 🇨🇴</p>
       <div class="hero-buttons">
-        <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+        <a href="#repositorio" class="btn-primary">Ver Repositorio</a>
         <a href="#contacto" class="btn-secondary">Contáctanos</a>
       </div>
     </div>
@@ -52,35 +54,50 @@
   <section id="nosotros" class="section" data-aos="fade-right">
     <h2>Sobre Nosotros</h2>
     <p>
-      El <strong>Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC)</strong> 
-      promueve el uso de modelamiento numérico, inteligencia artificial y simulación directa 
-      en la exploración del subsuelo, energía sostenible y recursos estratégicos.
+      El <strong>Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC)</strong>
+      promueve la formación investigativa en modelamiento numérico, inteligencia artificial y simulación directa,
+      aplicada a la exploración del subsuelo, la energía sostenible y los recursos estratégicos.
     </p>
   </section>
 
-  <!-- 🔹 PROYECTOS -->
-  <section id="proyectos" class="section" data-aos="fade-left">
-    <h2>Proyectos Destacados</h2>
-    <div class="cards">
-      <div class="card" data-aos="zoom-in">
-        <h3>Modelamiento 3D de Resistividad</h3>
-        <p>Simulación directa con SimPEG en mallado OcTree, incluyendo topografía y modelos sintéticos.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="200">
-        <h3>Minerales Estratégicos</h3>
-        <p>Análisis geológico y metalogenético de zonas con potencial para materiales críticos.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="400">
-        <h3>Geointeligencia Climática</h3>
-        <p>Integración de coberturas, datos satelitales y variables climáticas mediante aprendizaje automático.</p>
-      </div>
-    </div>
+  <!-- 🔹 REPOSITORIO -->
+  <section id="repositorio" class="section dark" data-aos="fade-left">
+    <h2>Repositorio SIGAC</h2>
+    <p>
+      Explora nuestros códigos, simulaciones y modelos abiertos desarrollados en Python, SimPEG, GemPy y Google Earth Engine.
+    </p>
+    <a href="https://github.com/" class="btn-primary" target="_blank"><i class="fa-brands fa-github"></i> Ir al Repositorio</a>
   </section>
 
-  <!-- 🔹 EVENTOS -->
-  <section id="eventos" class="section" data-aos="fade-up">
-    <h2>Eventos y Divulgación</h2>
-    <p>Participación en congresos, talleres y proyectos de difusión científica relacionados con la geofísica aplicada y la transición energética.</p>
+  <!-- 🔹 TUTORIALES -->
+  <section id="tutoriales" class="section" data-aos="fade-up">
+    <h2>Tutoriales</h2>
+    <p>Aprende con nuestras guías paso a paso sobre simulación geofísica, modelamiento geológico e inteligencia artificial aplicada.</p>
+  </section>
+
+  <!-- 🔹 PUBLICACIONES -->
+  <section id="publicaciones" class="section dark" data-aos="fade-right">
+    <h2>Publicaciones</h2>
+    <p>Consulta los artículos, informes y presentaciones desarrollados por el semillero en diferentes eventos académicos.</p>
+  </section>
+
+  <!-- 🔹 INVESTIGACIÓN -->
+  <section id="investigacion" class="section" data-aos="fade-left">
+    <h2>Líneas de Investigación</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in">
+        <h3>Modelamiento 3D</h3>
+        <p>Simulación directa y modelado inverso en medios complejos con topografía.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>IA y Aprendizaje No Supervisado</h3>
+        <p>Aplicaciones de clustering, redes neuronales y análisis de patrones geofísicos.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Exploración Energética</h3>
+        <p>Modelamiento de recursos geotérmicos, hidrogeológicos y minerales críticos.</p>
+      </div>
+    </div>
   </section>
 
   <!-- 🔹 CONTACTO -->
@@ -95,12 +112,8 @@
     <p>© 2025 Semillero SIGAC | Geofísica Aplicada y Computacional</p>
   </footer>
 
-  <!-- Inicializar animaciones AOS -->
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
+    AOS.init({ duration: 1000, once: true });
   </script>
 </body>
 </html>
