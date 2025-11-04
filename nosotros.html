@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Semillero SIGAC</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | SIGAC</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
-  <header>
-    <h1>Semillero de Investigación en Geofísica Aplicada y Computacional - SIGAC</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#repositorio">Repositorio</a></li>
-        <li><a href="#tutoriales">Tutoriales</a></li>
-        <li><a href="#publicaciones">Publicaciones</a></li>
-        <li><a href="#investigacion">Investigación</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo_sigac.png" alt="Logo SIGAC">
+      <div class="logo-text">
+        <span class="nombre">SIGAC</span><br>
+        <span class="semillero">Semillero de Investigación en Geofísica Aplicada y Computacional</span>
+      </div>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html" class="active">Nosotros</a>
+      <a href="repositorio.html">Repositorio</a>
+      <a href="tutoriales.html">Tutoriales</a>
+      <a href="publicaciones.html">Publicaciones</a>
+      <a href="investigacion.html">Investigación</a>
+      <a href="contacto.html">Contacto</a>
     </nav>
   </header>
 
-  <!-- INICIO -->
-  <section id="inicio">
-    <h2>Inicio</h2>
-    <p>Bienvenidos al Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC) de la Universidad Industrial de Santander.</p>
+  <section class="section" data-aos="fade-up">
+    <h2>Información General</h2>
+    <div class="info-block">
+      <p><strong>Nombre del Semillero:</strong> Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC)</p>
+      <p><strong>Años Activos:</strong> 13 años (2012 - Actualidad)</p>
+      <p><strong>Grupo de Investigación:</strong> GIGBA</p>
+      <p><strong>Universidad:</strong> Universidad Industrial de Santander (UIS)</p>
+    </div>
+
+    <h2>Misión</h2>
+    <p>
+      El Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC) tiene como objetivo contribuir al conocimiento haciendo énfasis en el entendimiento geofísico y computacional de las geociencias, con el apoyo de estudiantes, profesores y personas interesadas en el campo de estudio.
+    </p>
+
+    <h2>Visión</h2>
+    <p>
+      El SIGAC busca consolidarse como un semillero que promueva la investigación estudiantil no solo a nivel nacional sino internacional, generando y adecuando proyectos científicos a través del desarrollo investigativo y social entre los estudiantes del programa, con el apoyo de profesionales comprometidos con el porvenir geocientífico.
+    </p>
+
+    <h2>Nuestra Historia</h2>
+    <p>
+      El Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC) fue fundado el 20 de abril de 2012 en la Escuela de Geología de la Universidad Industrial de Santander (UIS) por el M.Sc. Jairo Torres, docente de métodos geofísicos. En sus inicios, se denominó <strong>Grupo de Anisotropía Sísmica en la Exploración de Hidrocarburos (A-TEAM)</strong>, según consta en el Acta No. 001.
+      En 2014, el grupo adoptó su nombre actual, consolidándose como un semillero que integra investigación aplicada y el uso de herramientas computacionales en el ámbito geofísico.
+    </p>
+    <p>
+      Actualmente, SIGAC está compuesto por estudiantes de pregrado y posgrado de diversas disciplinas (Geología, Física, Ingeniería de Sistemas, Ingeniería Civil e Ingeniería de Petróleos), así como por profesionales vinculados a sectores industriales clave como hidrocarburos, geotecnia e hidrogeología.
+    </p>
+
+    <h2>Identidad Visual del SIGAC</h2>
+    <p>
+      El logo del SIGAC está diseñado para representar la identidad y los valores fundamentales del grupo. A través de una combinación de elementos gráficos y textuales, comunica la naturaleza interdisciplinaria y aplicada del semillero.
+    </p>
+
+    <div class="info-block">
+      <p><strong>Forma circular:</strong> simboliza la unidad y la integración de los miembros, así como el ciclo continuo de investigación e innovación.</p>
+      <p><strong>Texto en el borde:</strong> “Semillero de Investigación en Geofísica Aplicada y Computacional” y “Universidad Industrial de Santander (UIS)” destacan la formalidad y vínculo institucional.</p>
+      <p><strong>Centro del logo – SIGAC:</strong> resalta el enfoque del semillero y su propósito común.</p>
+      <p><strong>Ondas geofísicas:</strong> representan los fenómenos y métodos de la investigación geofísica, especialmente las ondas sísmicas.</p>
+      <p><strong>Colores:</strong> los tonos rojos y dorados transmiten pasión, compromiso y excelencia académica.</p>
+    </div>
+
+    <h2>Ética y Normatividad</h2>
+    <p>
+      El semillero se rige por los estatutos de la Universidad Industrial de Santander, asegurando que sus actividades estén alineadas con las normativas institucionales. Todos los miembros deben velar por el buen nombre del grupo y de la universidad.
+    </p>
+
+    <h3>Reglas Internas</h3>
+    <ul class="rules">
+      <li><strong>Asistencia Obligatoria:</strong> Los estudiantes deben asistir puntualmente a las reuniones del calendario oficial.</li>
+      <li><strong>Presentación de Avances:</strong> Cada miembro presenta periódicamente los avances de su investigación, fomentando el progreso y el intercambio de ideas.</li>
+      <li><strong>Cumplimiento de Responsabilidades:</strong> Se espera compromiso y cumplimiento con las tareas asignadas.</li>
+      <li><strong>Compromiso con la Calidad Académica:</strong> Mantener altos estándares de rigor e integridad científica en los trabajos.</li>
+      <li><strong>Normas de Conducta y Respeto:</strong> Promover un ambiente colaborativo, basado en el respeto y la comunicación profesional.</li>
+      <li><strong>Presentación Personal y Uniforme:</strong> Portar la camisa oficial del grupo en eventos académicos y mantener una presentación adecuada.</li>
+    </ul>
   </section>
 
-  <!-- NOSOTROS -->
-  <section id="nosotros">
-    <h2>Nosotros</h2>
-    <div class="accordion">
-      <details>
-        <summary>Información General</summary>
-        <p><strong>Nombre del Semillero:</strong> Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC)</p>
-        <p><strong>Años Activos:</strong> 13 años (2012 - Actualidad)</p>
-        <p><strong>Grupo de Investigación:</strong> GIGBA</p>
-        <p><strong>Universidad:</strong> Universidad Industrial de Santander (UIS)</p>
-      </details>
+  <footer>
+    <p>© 2025 Semillero SIGAC | Geofísica Aplicada y Computacional</p>
+  </footer>
 
-      <details>
-        <summary>Misión</summary>
-        <p>El SIGAC tiene como objetivo contribuir al conocimiento haciendo énfasis en el entendimiento geofísico y computacional de las geociencias, con el apoyo de estudiantes, profesores y personas interesadas en el campo de estudio.</p>
-      </details>
-
-      <details>
-        <summary>Visión</summary>
-        <p>El SIGAC busca consolidarse como un semillero que promueva la investigación estudiantil no solo a nivel nacional sino internacional, generando proyectos científicos a través del desarrollo investigativo y social con el apoyo de profesionales comprometidos con el porvenir geocientífico.</p>
-      </details>
-
-      <details>
-        <summary>Nuestra Historia</summary>
-        <p>Fundado el 20 de abril de 2012 por el M.Sc. Jairo Torres, inicialmente bajo el nombre "A-TEAM". En 2014 adoptó su nombre actual, consolidándose
+  <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
