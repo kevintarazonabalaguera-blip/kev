@@ -12,6 +12,11 @@
 </head>
 
 <body>
+  <!-- 🔄 LOADER -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
   <header class="navbar">
     <div class="logo">
       <img src="logo_sigac.png" alt="Logo SIGAC">
@@ -48,7 +53,7 @@
     </div>
   </section>
 
-  <!-- 🔹 CONTACTO -->
+  <!-- 🔹 SECCIÓN CONTACTO -->
   <section id="contacto" class="section contacto" data-aos="flip-up">
     <h2>Contáctanos</h2>
     <div class="contacto-info">
@@ -77,11 +82,29 @@
 
   <script>
     AOS.init({ duration: 1000, once: true });
+
     const toggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
     toggle.addEventListener('click', () => {
       navMenu.classList.toggle('active');
       toggle.classList.toggle('active');
+    });
+
+    // Loader al cargar la página
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      loader.classList.add("hidden");
+    });
+
+    // Loader al hacer clic en enlaces
+    const links = document.querySelectorAll("a[href]");
+    links.forEach(link => {
+      link.addEventListener("click", e => {
+        const href = link.getAttribute("href");
+        if (!href.startsWith("#") && !href.startsWith("mailto")) {
+          document.getElementById("loader").classList.remove("hidden");
+        }
+      });
     });
   </script>
 </body>
