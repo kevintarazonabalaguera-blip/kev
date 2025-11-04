@@ -21,8 +21,9 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255,255,255,0.9);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #4b0000; /* burdeos oscuro */
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,25 +31,37 @@ a {
   z-index: 1000;
 }
 
-.navbar .logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 .navbar nav a {
   margin: 0 1rem;
   font-weight: 500;
+  color: white;
   transition: color 0.3s;
 }
 
 .navbar nav a:hover {
-  color: #32CD32;
+  color: #ffb347; /* tono cálido para hover */
+}
+
+/* ====== LOGO ====== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* ====== HERO ====== */
 .hero {
-  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.3)),
-              url('https://images.unsplash.com/photo-1573495612937-3f8a2b00c4a1?auto=format&fit=crop&w=1600&q=80');
+  background: linear-gradient(to right, rgba(75,0,0,0.7), rgba(139,0,0,0.4)),
+              url('fondo_sigac.png'); /* tu imagen personalizada */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -61,8 +74,9 @@ a {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .hero-content p {
@@ -79,7 +93,7 @@ a {
 }
 
 .btn-primary {
-  background-color: #32CD32;
+  background-color: #8b0000;
   color: white;
 }
 
@@ -90,7 +104,7 @@ a {
 }
 
 .btn-primary:hover {
-  background-color: #28a428;
+  background-color: #ff3333;
 }
 
 .btn-secondary:hover {
@@ -110,7 +124,7 @@ a {
 .section h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #111;
+  color: #4b0000;
 }
 
 .section p {
@@ -140,9 +154,14 @@ a {
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+/* ====== ENERGÍA ====== */
+.energia {
+  background: #ffe5e5;
+}
+
 /* ====== CONTACTO ====== */
 .contacto {
-  background: linear-gradient(135deg, #32CD32, #006400);
+  background: linear-gradient(135deg, #8b0000, #4b0000);
   color: white;
 }
 
@@ -150,8 +169,7 @@ a {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #222;
+  background: #2b0000;
   color: white;
   font-size: 0.9rem;
 }
-
