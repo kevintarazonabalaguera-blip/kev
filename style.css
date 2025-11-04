@@ -31,24 +31,11 @@ a {
   z-index: 1000;
 }
 
-.navbar nav a {
-  margin: 0 1rem;
-  font-weight: 500;
-  color: white;
-  transition: color 0.3s;
-}
-
-.navbar nav a:hover {
-  color: #ffb347; /* tono cálido para hover */
-}
-
 /* ====== LOGO ====== */
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: bold;
-  color: white;
 }
 
 .logo img {
@@ -58,10 +45,38 @@ a {
   object-fit: cover;
 }
 
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-text .nombre {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.logo-text .semillero {
+  font-size: 0.9rem;
+  color: #ffcccc;
+}
+
+/* ====== NAVEGACIÓN ====== */
+.navbar nav a {
+  margin: 0 1rem;
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #32CD32;
+}
+
 /* ====== HERO ====== */
 .hero {
   background: linear-gradient(to right, rgba(75,0,0,0.7), rgba(139,0,0,0.4)),
-              url('fondo_sigac.png'); /* tu imagen personalizada */
+              url('fondo_sigac.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -74,9 +89,8 @@ a {
 }
 
 .hero-content h1 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  text-transform: uppercase;
 }
 
 .hero-content p {
@@ -93,7 +107,7 @@ a {
 }
 
 .btn-primary {
-  background-color: #8b0000;
+  background-color: #32CD32;
   color: white;
 }
 
@@ -104,7 +118,7 @@ a {
 }
 
 .btn-primary:hover {
-  background-color: #ff3333;
+  background-color: #28a428;
 }
 
 .btn-secondary:hover {
@@ -154,14 +168,9 @@ a {
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* ====== ENERGÍA ====== */
-.energia {
-  background: #ffe5e5;
-}
-
 /* ====== CONTACTO ====== */
 .contacto {
-  background: linear-gradient(135deg, #8b0000, #4b0000);
+  background: linear-gradient(135deg, #4b0000, #8b0000);
   color: white;
 }
 
@@ -169,7 +178,7 @@ a {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #2b0000;
+  background: #222;
   color: white;
   font-size: 0.9rem;
 }
