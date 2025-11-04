@@ -163,10 +163,10 @@
     <p>© 2025 Semillero SIGAC | Geofísica Aplicada y Computacional</p>
   </footer>
 
+  <!-- ✅ Script del menú hamburguesa -->
   <script>
     AOS.init({ duration: 1000, once: true });
 
-    // Menú hamburguesa
     const toggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
 
@@ -175,6 +175,36 @@
       toggle.classList.toggle('active');
     });
   </script>
+
+  <!-- ✅ Script de los modales (va AQUÍ, antes del cierre del body) -->
+  <script>
+    const modales = {
+      'nosotros': document.getElementById('modal-nosotros'),
+      'repositorio': document.getElementById('modal-repositorio'),
+      'tutoriales': document.getElementById('modal-tutoriales'),
+      'publicaciones': document.getElementById('modal-publicaciones'),
+      'investigacion': document.getElementById('modal-investigacion')
+    };
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        const id = link.getAttribute('href').replace('#', '');
+        if (modales[id]) {
+          e.preventDefault();
+          modales[id].style.display = 'block';
+        }
+      });
+    });
+
+    document.querySelectorAll('.close').forEach(btn => {
+      btn.onclick = () => btn.closest('.modal').style.display = 'none';
+    });
+
+    window.onclick = (event) => {
+      Object.values(modales).forEach(modal => {
+        if (event.target === modal) modal.style.display = 'none';
+      });
+    };
+  </script>
 </body>
 </html>
-
