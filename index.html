@@ -8,7 +8,7 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- AOS Animaciones -->
+  <!-- Librería AOS (animaciones al hacer scroll) -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -27,8 +27,7 @@
       </div>
     </div>
 
-    <!-- Menú -->
-    <nav id="nav-menu">
+    <nav>
       <a href="#inicio">Inicio</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#repositorio">Repositorio</a>
@@ -37,91 +36,90 @@
       <a href="#investigacion">Investigación</a>
       <a href="#contacto">Contacto</a>
     </nav>
-
-    <!-- Botón hamburguesa -->
-    <div class="menu-toggle" id="menu-toggle">
-      <i class="fa fa-bars"></i>
-    </div>
   </header>
 
   <!-- 🔹 HERO -->
   <section id="inicio" class="hero">
     <div class="hero-content" data-aos="fade-up">
-      <h1>Geofísica Aplicada y Energía Sostenible</h1>
-      <p>Modelamiento, simulación y análisis computacional al servicio del desarrollo geocientífico de Colombia 🇨🇴</p>
+      <h1>Modelamiento Geofísico y Energía Sostenible</h1>
+      <p>Investigación en geofísica aplicada y computacional para el desarrollo de Colombia 🇨🇴</p>
       <div class="hero-buttons">
-        <a href="#repositorio" class="btn-primary">Ver Repositorio</a>
+        <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
         <a href="#contacto" class="btn-secondary">Contáctanos</a>
       </div>
     </div>
   </section>
 
-  <!-- 🔹 SECCIONES -->
+  <!-- 🔹 NOSOTROS -->
   <section id="nosotros" class="section" data-aos="fade-right">
     <h2>Sobre Nosotros</h2>
     <p>
-      El <strong>Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC)</strong>
-      fomenta la formación científica en modelamiento numérico, simulación directa e inteligencia artificial 
-      aplicada a la exploración del subsuelo, la energía sostenible y los recursos estratégicos.
+      El <strong>Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC)</strong> 
+      promueve el uso de modelamiento numérico, inteligencia artificial y simulación directa 
+      en la exploración del subsuelo, energía sostenible y recursos estratégicos.
     </p>
   </section>
 
-  <section id="repositorio" class="section alt" data-aos="fade-left">
-    <h2>Repositorio SIGAC</h2>
-    <p>
-      Explora nuestros códigos, simulaciones y modelos abiertos desarrollados en Python, SimPEG, GemPy y Google Earth Engine.
-    </p>
-    <a href="https://github.com/" class="btn-primary" target="_blank"><i class="fa-brands fa-github"></i> Ir al Repositorio</a>
+  <!-- 🔹 REPOSITORIO -->
+  <section id="repositorio" class="section" data-aos="fade-left">
+    <h2>Repositorio</h2>
+    <p>Consulta nuestros códigos, modelos y simulaciones disponibles en GitHub.</p>
+    <a href="https://github.com/" target="_blank" class="btn-primary">Ver Repositorio</a>
   </section>
 
+  <!-- 🔹 TUTORIALES -->
   <section id="tutoriales" class="section" data-aos="fade-up">
     <h2>Tutoriales</h2>
-    <p>Aprende con nuestras guías paso a paso sobre simulación geofísica, modelamiento geológico e inteligencia artificial aplicada.</p>
+    <p>Explora nuestros recursos educativos sobre modelamiento, procesamiento y análisis geofísico.</p>
   </section>
 
-  <section id="publicaciones" class="section alt" data-aos="fade-right">
+  <!-- 🔹 PUBLICACIONES -->
+  <section id="publicaciones" class="section" data-aos="fade-right">
     <h2>Publicaciones</h2>
-    <p>Consulta los artículos, informes y presentaciones desarrollados por el semillero en diferentes eventos académicos.</p>
+    <p>Conoce los artículos, informes y participaciones en congresos elaborados por el semillero SIGAC.</p>
   </section>
 
-  <section id="investigacion" class="section" data-aos="fade-left">
-    <h2>Líneas de Investigación</h2>
-    <div class="cards">
-      <div class="card" data-aos="zoom-in">
-        <h3>Modelamiento 3D</h3>
-        <p>Simulación directa e inversa en medios complejos con topografía.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="200">
-        <h3>IA y Aprendizaje No Supervisado</h3>
-        <p>Clustering, redes neuronales y análisis de patrones geofísicos.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="400">
-        <h3>Exploración Energética</h3>
-        <p>Modelamiento de recursos geotérmicos e hidrogeológicos.</p>
-      </div>
+  <!-- 🔹 INVESTIGACIÓN -->
+  <section id="investigacion" class="section" data-aos="fade-up">
+    <h2>Investigación</h2>
+    <p>Desarrollo de proyectos enfocados en la exploración geofísica, la sostenibilidad y la innovación científica.</p>
+  </section>
+
+  <!-- 🔹 CONTACTO -->
+  <section id="contacto" class="section contacto" data-aos="flip-up">
+    <h2>Contáctanos</h2>
+
+    <div class="contact-info">
+      <p><strong>Correo:</strong> <a href="mailto:sigac@uis.edu.co">sigac@uis.edu.co</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/sigacuis" target="_blank">@sigacuis</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/sigacuis" target="_blank">
+        Semillero de Investigación en Geofísica Aplicada - SIGAC</a></p>
+      <p><strong>Dirección:</strong> Universidad Industrial de Santander<br>
+        Carrera 27 Calle 9, Bucaramanga, Santander<br>
+        <strong>Teléfono:</strong> +57 (607) 634 4000</p>
+    </div>
+
+    <a href="https://www.google.com/maps/place/Universidad+Industrial+de+Santander/@7.1371,-73.1208,17z"
+      target="_blank" class="btn-primary">Ver mapa</a>
+
+    <div class="map-container" data-aos="zoom-in">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8077280342616!2d-73.12299812485843!3d7.137136792878742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e68156f6f2a4815%3A0x1e4e3e4a033b7de5!2sUniversidad%20Industrial%20de%20Santander!5e0!3m2!1ses-419!2sco!4v1730666666000!5m2!1ses-419!2sco"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
 
-  <section id="contacto" class="section contacto" data-aos="flip-up">
-    <h2>Contáctanos</h2>
-    <p>¿Quieres colaborar o conocer más sobre nuestros proyectos?</p>
-    <a href="mailto:kevin.tarazona@ejemplo.com" class="btn-primary">Escríbenos</a>
-  </section>
-
+  <!-- 🔹 FOOTER -->
   <footer>
     <p>© 2025 Semillero SIGAC | Geofísica Aplicada y Computacional</p>
   </footer>
 
+  <!-- Inicializar animaciones AOS -->
   <script>
-    AOS.init({ duration: 1000, once: true });
-
-    // Menú hamburguesa
-    const toggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    toggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      toggle.classList.toggle('active');
+    AOS.init({
+      duration: 1000,
+      once: true
     });
   </script>
 </body>
