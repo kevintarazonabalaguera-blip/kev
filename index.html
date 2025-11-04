@@ -12,7 +12,8 @@
 </head>
 
 <body>
-  <!-- 🔄 LOADER -->
+
+  <!-- 🔹 LOADER -->
   <div id="loader">
     <div class="spinner"></div>
   </div>
@@ -53,15 +54,14 @@
     </div>
   </section>
 
-  <!-- 🔹 SECCIÓN CONTACTO -->
+  <!-- 🔹 CONTACTO -->
   <section id="contacto" class="section contacto" data-aos="flip-up">
     <h2>Contáctanos</h2>
+
     <div class="contacto-info">
       <p><strong>Correo:</strong> <a href="mailto:sigac@uis.edu.co">sigac@uis.edu.co</a></p>
-      <p><strong>Instagram:</strong> 
-        <a href="https://instagram.com/sigacuis" target="_blank">@sigacuis</a></p>
-      <p><strong>LinkedIn:</strong> 
-        <a href="https://www.linkedin.com/company/sigacuis" target="_blank">Semillero de Investigación en Geofísica Aplicada - SIGAC</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/sigacuis" target="_blank">@sigacuis</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/sigacuis" target="_blank">Semillero de Investigación en Geofísica Aplicada - SIGAC</a></p>
       <p><strong>Dirección:</strong> Universidad Industrial de Santander<br>
         Carrera 27 Calle 9, Bucaramanga, Santander<br>
         <strong>Teléfono:</strong> +57 (607) 634 4000</p>
@@ -69,7 +69,7 @@
 
     <!-- 🌍 Mapa de la UIS -->
     <div class="mapa-container" data-aos="zoom-in">
-      <iframe 
+      <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9967562464143!2d-73.12151242407943!3d7.137003692885069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e68156f7c8a7a89%3A0xc94467e5a3989c0b!2sUniversidad%20Industrial%20de%20Santander!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco"
         width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
       </iframe>
@@ -90,13 +90,13 @@
       toggle.classList.toggle('active');
     });
 
-    // Loader al cargar la página
+    // 🔹 Loader: se oculta al cargar la página
     window.addEventListener("load", () => {
       const loader = document.getElementById("loader");
       loader.classList.add("hidden");
     });
 
-    // Loader al hacer clic en enlaces
+    // 🔹 Loader: se muestra al hacer clic en enlaces
     const links = document.querySelectorAll("a[href]");
     links.forEach(link => {
       link.addEventListener("click", e => {
@@ -107,5 +107,6 @@
       });
     });
   </script>
+
 </body>
 </html>
