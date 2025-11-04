@@ -3,99 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kevin Tarazona | Geociencias y Energía</title>
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Librería AOS (animaciones al hacer scroll) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <!-- Iconos (opcional) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>SIGAC | Kevin Tarazona</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- 🔹 NAVBAR -->
+  <!-- ====== NAVBAR ====== -->
   <header class="navbar">
     <div class="logo">
-  <img src="logo_sigac.png" alt="Logo SIGAC">
-  <span>Kevin Tarazona</span>
-</div>
+      <img src="logo_sigac.png" alt="Logo SIGAC">
+      <span>Kevin Tarazona</span>
+    </div>
     <nav>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#eventos">Eventos</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Modelamiento</a>
+      <a href="#energia">Energía</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <!-- 🔹 HERO PRINCIPAL -->
-  <section class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Modelamiento Geofísico y Energía Sostenible</h1>
-      <p>Geociencias aplicadas al desarrollo de Colombia 🌎</p>
-      <div class="hero-buttons">
-        <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
-        <a href="#contacto" class="btn-secondary">Contáctame</a>
+  <!-- ====== HERO ====== -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>SEMILLERO DE INVESTIGACIÓN EN GEOFÍSICA APLICADA Y COMPUTACIONAL</h1>
+      <p>Explorando el subsuelo con innovación, modelamiento y energía.</p>
+      <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+      <a href="#contacto" class="btn-secondary">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- ====== SECCIÓN MODELAMIENTO ====== -->
+  <section id="proyectos" class="section">
+    <h2>Modelamiento Geofísico 3D</h2>
+    <p>Desarrollo de simulaciones numéricas aplicadas a métodos eléctricos y gravimétricos, apoyadas en técnicas computacionales modernas.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Modelos de Conductividad</h3>
+        <p>Implementación de simulaciones 3D usando SimPEG y malhas Octree.</p>
+      </div>
+      <div class="card">
+        <h3>Topografía y Estratigrafía</h3>
+        <p>Integración de datos geológicos y topográficos en la respuesta geofísica.</p>
+      </div>
+      <div class="card">
+        <h3>Inversión Directa</h3>
+        <p>Evaluación de metodologías FWI y aprendizaje profundo guiado por la física.</p>
       </div>
     </div>
   </section>
 
-  <!-- 🔹 NOSOTROS -->
-  <section id="nosotros" class="section" data-aos="fade-right">
-    <h2>Sobre mí</h2>
-    <p>
-      Soy geocientífico con enfoque en modelamiento directo e inverso 3D para métodos gravimétricos y geoléctricos, utilizando herramientas como SimPEG y Python.
-      Trabajo en la integración de datos geológicos, geofísicos y climáticos para el análisis del subsuelo y la transición energética.
+  <!-- ====== SECCIÓN ENERGÍA ====== -->
+  <section id="energia" class="section energia">
+    <h2>Energía y Sustentabilidad</h2>
+    <p>Investigaciones orientadas a la exploración geotérmica y al aprovechamiento sostenible de recursos naturales.</p>
+  </section>
+
+  <!-- ====== CONTACTO ====== -->
+  <section id="contacto" class="section contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres conocer más o colaborar con nosotros? Escríbenos a:  
+      <strong>sigac@uis.edu.co</strong>
     </p>
   </section>
 
-  <!-- 🔹 PROYECTOS -->
-  <section id="proyectos" class="section" data-aos="fade-left">
-    <h2>Proyectos Destacados</h2>
-    <div class="cards">
-      <div class="card" data-aos="zoom-in">
-        <h3>Modelamiento 3D Resistividad</h3>
-        <p>Simulación directa con SimPEG en mallado OcTree, incluyendo topografía y modelos sintéticos.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="200">
-        <h3>Minerales Estratégicos</h3>
-        <p>Análisis geológico y metalogenético de zonas con potencial para materiales críticos.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="400">
-        <h3>Geointeligencia Climática</h3>
-        <p>Integración de coberturas, datos satelitales y variables climáticas mediante aprendizaje automático.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🔹 EVENTOS -->
-  <section id="eventos" class="section" data-aos="fade-up">
-    <h2>Eventos y Divulgación</h2>
-    <p>Participación en congresos, talleres y proyectos de difusión científica relacionados con la geofísica aplicada y la transición energética.</p>
-  </section>
-
-  <!-- 🔹 CONTACTO -->
-  <section id="contacto" class="section contacto" data-aos="flip-up">
-    <h2>Contáctame</h2>
-    <p>¿Quieres colaborar en un proyecto o conocer más?</p>
-    <a href="mailto:kevin.tarazona@ejemplo.com" class="btn-primary">Escríbeme</a>
-  </section>
-
-  <!-- 🔹 FOOTER -->
+  <!-- ====== FOOTER ====== -->
   <footer>
-    <p>© 2025 Kevin Tarazona | Geociencias y Energía</p>
+    © 2025 SIGAC - Semillero de Investigación en Geofísica Aplicada y Computacional | Kevin Tarazona
   </footer>
 
-  <!-- Inicializar animaciones AOS -->
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
 </body>
 </html>
 
