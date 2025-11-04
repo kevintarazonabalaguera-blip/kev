@@ -3,118 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Semillero SIGAC | Geofísica Aplicada y Computacional</title>
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- AOS Animaciones -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <!-- Iconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>SIGAC | Semillero de Investigación</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- 🔹 NAVBAR -->
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
-    <div class="logo">
-      <img src="logo_sigac.png" alt="Logo SIGAC">
+    <div class="logo-container">
+      <img src="tu_logo.png" alt="Logo SIGAC" class="logo">
       <div class="logo-text">
-        <span class="nombre">SIGAC</span><br>
-        <span class="semillero">Semillero de Investigación en Geofísica Aplicada y Computacional</span>
+        <h1>SIGAC</h1>
+        <p>SEMILLERO DE INVESTIGACIÓN EN GEOFÍSICA APLICADA Y COMPUTACIONAL</p>
       </div>
     </div>
-
     <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#repositorio">Repositorio</a>
-      <a href="#tutoriales">Tutoriales</a>
-      <a href="#publicaciones">Publicaciones</a>
-      <a href="#investigacion">Investigación</a>
-      <a href="#contacto">Contacto</a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#repositorio">Repositorio</a></li>
+        <li><a href="#tutoriales">Tutoriales</a></li>
+        <li><a href="#publicaciones">Publicaciones</a></li>
+        <li><a href="#investigacion">Investigación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- 🔹 HERO -->
+  <!-- ===== HERO ===== -->
   <section id="inicio" class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Geofísica Aplicada y Energía Sostenible</h1>
-      <p>Modelamiento, simulación y análisis computacional al servicio del desarrollo geocientífico de Colombia 🇨🇴</p>
+    <div class="hero-content">
+      <h2>Modelamiento Geofísico y Energía Sostenible</h2>
+      <p>Investigación en geofísica aplicada y computacional para el desarrollo de Colombia</p>
       <div class="hero-buttons">
-        <a href="#repositorio" class="btn-primary">Ver Repositorio</a>
-        <a href="#contacto" class="btn-secondary">Contáctanos</a>
+        <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+        <a href="#contacto" class="btn-outline">Contáctanos</a>
       </div>
     </div>
   </section>
 
-  <!-- 🔹 NOSOTROS -->
-  <section id="nosotros" class="section" data-aos="fade-right">
-    <h2>Sobre Nosotros</h2>
-    <p>
-      El <strong>Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC)</strong>
-      promueve la formación investigativa en modelamiento numérico, inteligencia artificial y simulación directa,
-      aplicada a la exploración del subsuelo, la energía sostenible y los recursos estratégicos.
-    </p>
+  <!-- ===== SECCIONES DE EJEMPLO ===== -->
+  <section id="nosotros" class="section">
+    <h3>Nosotros</h3>
+    <p>El Semillero SIGAC promueve la investigación en geofísica aplicada y el modelamiento numérico para el desarrollo sostenible del país.</p>
   </section>
 
-  <!-- 🔹 REPOSITORIO -->
-  <section id="repositorio" class="section dark" data-aos="fade-left">
-    <h2>Repositorio SIGAC</h2>
-    <p>
-      Explora nuestros códigos, simulaciones y modelos abiertos desarrollados en Python, SimPEG, GemPy y Google Earth Engine.
-    </p>
-    <a href="https://github.com/" class="btn-primary" target="_blank"><i class="fa-brands fa-github"></i> Ir al Repositorio</a>
+  <section id="repositorio" class="section alt">
+    <h3>Repositorio</h3>
+    <p>Accede a nuestros proyectos de código abierto, simulaciones y bases de datos en GitHub.</p>
   </section>
 
-  <!-- 🔹 TUTORIALES -->
-  <section id="tutoriales" class="section" data-aos="fade-up">
-    <h2>Tutoriales</h2>
-    <p>Aprende con nuestras guías paso a paso sobre simulación geofísica, modelamiento geológico e inteligencia artificial aplicada.</p>
+  <section id="tutoriales" class="section">
+    <h3>Tutoriales</h3>
+    <p>Explora nuestros tutoriales sobre SimPEG, GemPy, procesamiento sísmico y visualización 3D.</p>
   </section>
 
-  <!-- 🔹 PUBLICACIONES -->
-  <section id="publicaciones" class="section dark" data-aos="fade-right">
-    <h2>Publicaciones</h2>
-    <p>Consulta los artículos, informes y presentaciones desarrollados por el semillero en diferentes eventos académicos.</p>
+  <section id="publicaciones" class="section alt">
+    <h3>Publicaciones</h3>
+    <p>Consulta nuestros artículos, informes y colaboraciones académicas.</p>
   </section>
 
-  <!-- 🔹 INVESTIGACIÓN -->
-  <section id="investigacion" class="section" data-aos="fade-left">
-    <h2>Líneas de Investigación</h2>
-    <div class="cards">
-      <div class="card" data-aos="zoom-in">
-        <h3>Modelamiento 3D</h3>
-        <p>Simulación directa y modelado inverso en medios complejos con topografía.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="200">
-        <h3>IA y Aprendizaje No Supervisado</h3>
-        <p>Aplicaciones de clustering, redes neuronales y análisis de patrones geofísicos.</p>
-      </div>
-      <div class="card" data-aos="zoom-in" data-aos-delay="400">
-        <h3>Exploración Energética</h3>
-        <p>Modelamiento de recursos geotérmicos, hidrogeológicos y minerales críticos.</p>
-      </div>
-    </div>
+  <section id="investigacion" class="section">
+    <h3>Investigación</h3>
+    <p>Desarrollamos modelos y metodologías innovadoras en geofísica aplicada y computacional.</p>
   </section>
 
-  <!-- 🔹 CONTACTO -->
-  <section id="contacto" class="section contacto" data-aos="flip-up">
-    <h2>Contáctanos</h2>
-    <p>¿Quieres colaborar o conocer más sobre nuestros proyectos?</p>
-    <a href="mailto:kevin.tarazona@ejemplo.com" class="btn-primary">Escríbenos</a>
+  <section id="contacto" class="section alt">
+    <h3>Contacto</h3>
+    <p>Escríbenos para colaborar o conocer más sobre nuestros proyectos.</p>
   </section>
 
-  <!-- 🔹 FOOTER -->
-  <footer>
-    <p>© 2025 Semillero SIGAC | Geofísica Aplicada y Computacional</p>
+  <footer class="footer">
+    <p>© 2025 SIGAC - Semillero de Investigación en Geofísica Aplicada y Computacional</p>
   </footer>
-
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
 </body>
 </html>
-
