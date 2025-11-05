@@ -283,3 +283,81 @@ footer {
     display: none;
   }
 }
+/* ====== BARRA SUPERIOR REDES ====== */
+.top-bar {
+  background: transparent;
+  color: white;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 8px 40px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1001;
+}
+
+.top-bar .social-icons a {
+  color: white;
+  margin-left: 15px;
+  font-size: 1.1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.top-bar .social-icons a:hover {
+  color: #ff4b4b;
+  transform: scale(1.2);
+}
+
+/* ====== NAVBAR TRANSPARENTE ====== */
+.navbar.transparent {
+  position: absolute;
+  top: 35px; /* espacio para la barra superior */
+  left: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: white;
+  z-index: 1000;
+  transition: background 0.4s, box-shadow 0.4s;
+}
+
+/* Cuando se hace scroll: navbar blanca */
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  background: white;
+  color: black;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar.sticky a {
+  color: #b30000;
+}
+
+.navbar img {
+  height: 55px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  transition: color 0.3s;
+}
+
+.navbar.transparent a:hover {
+  color: #ff6666;
+}
+
+/* ====== CAMBIO DE COLOR EN SCROLL ====== */
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+});
