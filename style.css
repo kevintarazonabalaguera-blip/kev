@@ -258,3 +258,28 @@ footer {
 [data-aos] {
   transition: all 0.8s ease-in-out;
 }
+
+/* ====== ICONOS SOCIALES EN NAVBAR ====== */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #b30000;
+  font-size: 1.3rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #7a0000;
+  transform: scale(1.15);
+}
+
+/* En pantallas pequeñas, ocultar si se desea */
+@media (max-width: 950px) {
+  .social-icons {
+    display: none;
+  }
+}
