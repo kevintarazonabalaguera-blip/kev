@@ -40,10 +40,129 @@
   </aside>
 
   <main class="section" data-aos="fade-up">
+      <!-- Información General -->
+  <section id="informacion-general" data-aos="fade-up" class="info-general">
+    <h2>Información General</h2>
+
+    <div class="info-tabla">
+      <table>
+        <tr><th>Nombre del Semillero</th><td>Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC)</td></tr>
+        <tr><th>Años Activos</th><td>13 años (2012 - Actualidad)</td></tr>
+        <tr><th>Grupo de Investigación</th><td>GIGBA</td></tr>
+        <tr><th>Universidad</th><td>Universidad Industrial de Santander (UIS)</td></tr>
+      </table>
+    </div>
+
+    <div class="info-contenido">
+      <h3>Filosofía Institucional</h3>
+      <h4>Misión</h4>
+      <p>El Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC) tiene como objetivo contribuir al conocimiento haciendo énfasis en el entendimiento geofísico y computacional de las geociencias, con el apoyo de estudiantes, profesores y personas interesadas en el campo de estudio.</p>
+
+      <h4>Visión</h4>
+      <p>El Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC) busca consolidarse como un semillero que promueva la investigación estudiantil no solo a nivel nacional sino internacional, generando y adecuando proyectos científicos a través del desarrollo investigativo y social entre los estudiantes del programa, con el apoyo de profesionales comprometidos con el porvenir geocientífico.</p>
+
+      <h3>Nuestra Historia</h3>
+      <p>El SIGAC fue fundado el <b>20 de abril de 2012</b> en la Escuela de Geología de la Universidad Industrial de Santander (UIS) por el M.Sc. Jairo Torres, docente de métodos geofísicos. En sus inicios se denominó <i>Grupo de Anisotropía Sísmica en la Exploración de Hidrocarburos (A-TEAM)</i>. En 2014 adoptó su nombre actual, consolidándose como un semillero que integra investigación aplicada y herramientas computacionales en el ámbito geofísico.</p>
+      <p>Actualmente, el semillero está compuesto por estudiantes de pregrado y posgrado de diversas disciplinas (Geología, Física, Ingeniería de Sistemas, Ingeniería Civil e Ingeniería de Petróleos), así como por profesionales vinculados a sectores industriales como hidrocarburos, geotecnia e hidrogeología.</p>
+
+      <h3>Identidad Visual del SIGAC</h3>
+      <p>El logo del SIGAC simboliza la unidad, la investigación continua y la integración entre disciplinas. A continuación se destacan los elementos clave:</p>
+      <ul>
+        <li><b>Forma circular:</b> Representa la unión y el ciclo constante de investigación e innovación.</li>
+        <li><b>Texto en el borde:</b> Resalta la formalidad institucional y el vínculo con la UIS.</li>
+        <li><b>Centro del logo – SIGAC:</b> Refleja la identidad colectiva y propósito común del semillero.</li>
+        <li><b>Ondas geofísicas:</b> Simbolizan los fenómenos y dinámicas estudiadas por el grupo.</li>
+        <li><b>Colores:</b> El rojo refleja pasión y el dorado excelencia y compromiso con el conocimiento.</li>
+      </ul>
+
+      <h3>Ética y Normatividad</h3>
+      <p>El semillero se rige por los estatutos de la Universidad Industrial de Santander (UIS), garantizando la integridad y el compromiso académico de todos sus miembros. Además, establece normas específicas que fortalecen su funcionamiento:</p>
+      <ul>
+        <li><b>Asistencia Obligatoria:</b> Los estudiantes deben asistir puntualmente a las actividades programadas, notificando previamente cualquier ausencia.</li>
+        <li><b>Presentación de Avances:</b> Cada miembro debe mostrar avances periódicos de su investigación.</li>
+        <li><b>Cumplimiento de Responsabilidades:</b> Se espera compromiso con las tareas asignadas y los plazos establecidos.</li>
+        <li><b>Calidad Académica:</b> Se promueve la integridad científica y la excelencia en todas las investigaciones.</li>
+        <li><b>Respeto y Conducta:</b> Se fomenta un ambiente colaborativo y profesional, basado en el respeto mutuo.</li>
+        <li><b>Presentación Personal:</b> El uso del uniforme del semillero es obligatorio en eventos y actividades oficiales.</li>
+      </ul>
+    </div>
+  </section>
     <h2>Sobre Nosotros</h2>
     <p>
       El <strong>Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC)</strong> fomenta la formación científica en modelamiento numérico, simulación directa e inteligencia artificial aplicada a la exploración del subsuelo, la energía sostenible y los recursos estratégicos.
     </p>
+
+    /* Información General */
+.info-general {
+  background-color: #f8f8f8;
+  color: #111;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.info-general h2 {
+  color: #9ef01a;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+  text-shadow: 0 0 5px rgba(158, 240, 26, 0.5);
+}
+
+.info-general h3 {
+  color: #004d99;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-left: 4px solid #9ef01a;
+  padding-left: 10px;
+}
+
+.info-general h4 {
+  color: #0066cc;
+  margin-top: 15px;
+}
+
+.info-general p, 
+.info-general li {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.info-general ul {
+  margin-left: 25px;
+  list-style-type: square;
+}
+
+.info-tabla {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.info-tabla table {
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.info-tabla th, .info-tabla td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+}
+
+.info-tabla th {
+  background-color: #9ef01a;
+  color: #071c1f;
+  text-align: left;
+  width: 30%;
+}
+
+.info-tabla td {
+  color: #111;
+}
 
     <hr class="divider">
 
