@@ -98,7 +98,7 @@
 
     <section id="pregrado" data-aos="fade-up">
       <h3>Estudiantes de Pregrado</h3>
-      <!-- Aquí puedes seguir agregando los demás estudiantes igual que los ejemplos anteriores -->
+      <!-- Puedes seguir agregando los demás estudiantes igual que los ejemplos anteriores -->
     </section>
   </main>
 
@@ -117,15 +117,25 @@
 
     .miembro {
       display: flex;
-      align-items: flex-start;
-      margin-bottom: 30px;
-      gap: 20px;
+      align-items: center;
+      margin-bottom: 40px;
+      gap: 25px;
     }
 
     .miembro img {
-      width: 130px;
-      border-radius: 10px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #9ef01a; /* Verde SIGAC */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
       object-fit: cover;
+      background-color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .miembro img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(158, 240, 26, 0.6);
     }
 
     .miembro div {
@@ -150,7 +160,15 @@
     .miembro a:hover {
       text-decoration: underline;
     }
+
+    body {
+      background-color: #071c1f; /* Fondo oscuro elegante */
+      color: #f4f4f4;
+    }
+
+    h2, h3, h4 {
+      color: #9ef01a;
+    }
   </style>
 </body>
 </html>
-
