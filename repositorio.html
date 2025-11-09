@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Repositorio | SIGAC</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repositorio | Semillero SIGAC</title>
+  <link rel="icon" href="logo_sigac.png" type="image/png">
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animaciones -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
+  <!-- 🔹 NAVBAR -->
   <header class="navbar">
     <div class="logo">
       <img src="logo_sigac.png" alt="Logo SIGAC">
@@ -15,6 +27,8 @@
         <span class="semillero">Semillero de Investigación en Geofísica Aplicada y Computacional</span>
       </div>
     </div>
+
+    <!-- Menú -->
     <nav id="nav-menu">
       <a href="index.html">Inicio</a>
       <a href="nosotros.html">Nosotros</a>
@@ -22,18 +36,119 @@
       <a href="tutoriales.html">Tutoriales</a>
       <a href="publicaciones.html">Publicaciones</a>
       <a href="investigacion.html">Investigación</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="#contacto">Contacto</a>
     </nav>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
   </header>
 
-  <section class="section">
-    <h2>Repositorio</h2>
-    <p>Aquí encontrarás los proyectos, scripts y modelos desarrollados por el semillero SIGAC.  
-    Explora nuestros trabajos en <a href="https://github.com/" target="_blank">GitHub</a>.</p>
+  <!-- 🔹 HERO -->
+  <section class="hero" style="height: 70vh; background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('images/repo_bg.jpg'); background-size: cover; background-position: center;">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Repositorio SIGAC</h1>
+      <p>Datos abiertos de proyectos geofísicos: sísmica, gravimetría, magnetometría y más.</p>
+      <a href="https://mailuis-my.sharepoint.com/:f:/g/personal/sigac_uis_edu_co/EqYnUg-1KdtEuvuX09qk1qsB4sd3w2jlTmZKWdsHA1kbnQ" target="_blank" class="btn-primary">Ir al repositorio</a>
+    </div>
   </section>
 
+  <!-- 🔹 EXPLICACIÓN DE ACCESO -->
+  <section class="section" data-aos="fade-right">
+    <h2>Acceso al Repositorio</h2>
+    <p>Consulta los pasos para acceder correctamente a los datos alojados en nuestro repositorio institucional.</p>
+    <video controls width="80%" style="border-radius: 10px; margin-top: 20px;">
+      <source src="images/CÓMO ACCEDER AL REPOSITORIO.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- 🔹 PROYECTOS -->
+  <section class="section alt" data-aos="fade-up">
+    <h2>Proyectos Geofísicos</h2>
+    <div class="cards">
+      <!-- Proyecto Maestría 1 -->
+      <div class="card" data-aos="zoom-in">
+        <h3>Proyecto Maestría 1 (2024)</h3>
+        <img src="images/SALIDA_MAESTRIA.jpeg" alt="Maestría 2024" style="width:100%; border-radius:10px; margin:10px 0;">
+        <p>Adquisición de datos SEDT, TRE, SEV, Gravimetría, Sísmica de refracción y Magnetometría en la UIS.</p>
+        <a href="https://mailuis-my.sharepoint.com/:f:/g/personal/sigac_uis_edu_co/Eoz_usoYjuFIv4CelODAKkgB4aWmKlN2e66UxUzuFxDAEw?e=TXuJCn" target="_blank" class="btn-secondary">Ver datos</a>
+      </div>
+
+      <!-- Proyecto La Tigra -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Proyecto La Tigra (2024)</h3>
+        <img src="images/S2-1.jpg" alt="La Tigra 2024" style="width:100%; border-radius:10px; margin:10px 0;">
+        <p>Estudio SEDT y TRE en Rionegro, Santander, con datos crudos y reportes de procesamiento.</p>
+        <a href="https://mailuis-my.sharepoint.com/:f:/g/personal/sigac_uis_edu_co/Emeafzoe4_lMkWEYwR0BROMBw0B0wncN_dNPotUPgA15IA" target="_blank" class="btn-secondary">Ver datos</a>
+      </div>
+
+      <!-- Proyecto Olivar 2024 -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Proyecto Olivar (2024)</h3>
+        <img src="images/SEV_FOTO.jpg" alt="Olivar 2024" style="width:100%; border-radius:10px; margin:10px 0;">
+        <p>Adquisición de SEV, SEDT y Sísmica de refracción en Piedecuesta con apoyo docente UIS.</p>
+        <a href="https://mailuis-my.sharepoint.com/:f:/g/personal/sigac_uis_edu_co/EhnSF6NU88VFpeOKxBhzmfkBLfGj7Iw6Vk0D8Ckkk7u3yg" target="_blank" class="btn-secondary">Ver datos</a>
+      </div>
+
+      <!-- Proyecto M4 -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Proyecto M4 (2023)</h3>
+        <img src="images/M4_grupo.jpg" alt="Proyecto M4" style="width:100%; border-radius:10px; margin:10px 0;">
+        <p>Campaña en la Mesa de los Santos con sísmica, SEV, TRE y GPR. Acompañamiento docente UIS.</p>
+        <a href="https://mailuis-my.sharepoint.com/:f:/g/personal/sigac_uis_edu_co/El13xEWjPBpAjmHMNUSQWgwBbHfjTL2dXscaphAVapx6yA?e=KXFE0h" target="_blank" class="btn-secondary">Ver datos</a>
+      </div>
+
+      <!-- Proyecto Diamante UIS -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Proyecto Diamante UIS (2022)</h3>
+        <img src="images/ProyectoDiamante.jpeg" alt="Diamante UIS" style="width:100%; border-radius:10px; margin:10px 0;">
+        <p>Adquisición de sísmica de refracción en el diamante de softball de la UIS.</p>
+        <a href="https://mailuis-my.sharepoint.com/:f:/g/personal/sigac_uis_edu_co/EoFDWLf06vlJoOcrRg0mBK0BhDNfEl2Ly50j3oDa0E7skA" target="_blank" class="btn-secondary">Ver datos</a>
+      </div>
+
+      <!-- Proyecto Mesa -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="500">
+        <h3>Proyecto Mesa de los Santos (2022)</h3>
+        <img src="images/MesadelosSantos.jpg" alt="Mesa de los Santos" style="width:100%; border-radius:10px; margin:10px 0;">
+        <p>Proyecto desarrollado durante tesis de Maestría del estudiante Álvaro Osma.</p>
+        <a href="https://mailuis-my.sharepoint.com/:f:/g/personal/sigac_uis_edu_co/EilkezDaGKRFsZdQiwmftLgBGLEFlIo9qbOCOj5FG-MzcQ" target="_blank" class="btn-secondary">Ver datos</a>
+      </div>
+
+      <!-- Proyecto Olivar 2022 -->
+      <div class="card" data-aos="zoom-in" data-aos-delay="600">
+        <h3>Proyecto Olivar (2022)</h3>
+        <img src="images/olivar2022.jpeg" alt="Olivar 2022" style="width:100%; border-radius:10px; margin:10px 0;">
+        <p>Salida técnica en Piedecuesta en la Segunda Semana de la Geofísica UIS.</p>
+        <a href="https://mailuis-my.sharepoint.com/:f:/g/personal/sigac_uis_edu_co/EthWOMY9At1ElyRdmj1O-W8BbA-9HYC4IpBWd5i-fcEHgg" target="_blank" class="btn-secondary">Ver datos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 CONDICIONES DE USO -->
+  <section class="section" data-aos="fade-left">
+    <h2>Condiciones de Uso</h2>
+    <p>Los datos publicados en este repositorio son de libre acceso para fines académicos, siempre que se cite correctamente la fuente como: <br>
+      <em>Semillero de Investigación en Geofísica Aplicada y Computacional (SIGAC), Universidad Industrial de Santander.</em>
+    </p>
+  </section>
+
+  <!-- 🔹 FOOTER -->
   <footer>
-    <p>© 2025 Semillero SIGAC</p>
+    <p>© 2025 Semillero SIGAC | Geofísica Aplicada y Computacional</p>
   </footer>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Menú hamburguesa
+    const toggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      toggle.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
+
