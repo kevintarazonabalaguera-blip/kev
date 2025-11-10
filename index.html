@@ -159,24 +159,26 @@
       navMenu.classList.toggle('active');
       toggle.classList.toggle('active');
     });
-  </script>
-  <!-- Botón para volver arriba -->
-<button id="btn-scroll-top" title="Volver arriba">
-  <i class="fa-solid fa-chevron-up"></i>
+<!-- 🔹 Botón para volver arriba -->
+<button id="scrollTopBtn" title="Volver arriba">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6C63FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
 </button>
 
 <script>
-  // Mostrar/ocultar botón al hacer scroll
-  const scrollBtn = document.getElementById("btn-scroll-top");
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  // Mostrar el botón apenas se baja un poco
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 250) {
-      scrollBtn.style.display = "flex";
+    if (window.scrollY > 80) { // 👈 aparece al bajar poquito
+      scrollBtn.classList.add("show");
     } else {
-      scrollBtn.style.display = "none";
+      scrollBtn.classList.remove("show");
     }
   });
 
-  // Desplazamiento suave hacia arriba
+  // Subir suavemente
   scrollBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
