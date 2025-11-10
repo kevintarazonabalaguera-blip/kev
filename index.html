@@ -160,6 +160,27 @@
       toggle.classList.toggle('active');
     });
   </script>
+  <!-- Botón para volver arriba -->
+<button id="btn-scroll-top" title="Volver arriba">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<script>
+  // Mostrar/ocultar botón al hacer scroll
+  const scrollBtn = document.getElementById("btn-scroll-top");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 250) {
+      scrollBtn.style.display = "flex";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  });
+
+  // Desplazamiento suave hacia arriba
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 </body>
 </html>
 
