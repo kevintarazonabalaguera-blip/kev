@@ -265,28 +265,36 @@ footer {
   }
 }
 
-#btn-scroll-top {
+/* 🔹 Botón Scroll To Top */
+#scrollTopBtn {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
   border: none;
   border-radius: 50%;
   background-color: #ffffff;
-  color: #6c63ff;
-  font-size: 20px;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  z-index: 999;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
 }
 
-#btn-scroll-top:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+/* Estado visible */
+#scrollTopBtn.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover con efecto suave */
+#scrollTopBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
